@@ -16,6 +16,7 @@ import java.util.Stack;
 import java.util.TreeSet;
 
 import POO.EstudoPOO;
+import lambdas.DesafioLambda;
 
 import java.util.HashSet;
 import java.util.List;
@@ -177,5 +178,10 @@ public class App {
 		System.out.println("teste");
 
 		EstudoPOO poo = new EstudoPOO();
+
+		StringBuilder sb = new StringBuilder("texto");
+		
+		// Lambdas e Streams
+		//		DesafioLambda desafio = new DesafioLambda();
 	}
 }
