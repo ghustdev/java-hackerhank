@@ -1,26 +1,12 @@
 import initial.code.Artigo;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.time.*;
+import java.util.*;
 import java.lang.Math;
-import java.util.Scanner;
-import java.util.Stack;
-import java.util.TreeSet;
 
 import POO.EstudoPOO;
 import lambdas.DesafioLambda;
-
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
 
 public class App {
 	public static void main(String[] args) throws Exception {
@@ -183,5 +169,37 @@ public class App {
 		
 		// Lambdas e Streams
 		//		DesafioLambda desafio = new DesafioLambda();
+		
+		// Classes Uteis:
+		
+		Date date = new Date();
+		System.out.println(date);
+		
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		System.out.println(cal.get(Calendar.MINUTE));
+		
+		Instant instant = cal.toInstant();
+		System.out.println(instant);
+		
+		LocalDate localDate = LocalDate.now();
+		System.out.println(localDate);
+		
+		LocalTime localTime = LocalTime.now();
+		System.out.println(localTime);
+		
+		LocalDateTime localDateTime = LocalDateTime.now();
+		System.out.println(localDateTime);
+		
+		ZonedDateTime zonedDateTime = ZonedDateTime.now();
+		System.out.println(zonedDateTime);
+		
+		ZoneId fusoSp = ZoneId.of("America/Bahia");
+		System.out.println(fusoSp);
+		
+		// OffsetDateTime para serialização em APIs REST
+		OffsetDateTime offsetUtc = OffsetDateTime.now(ZoneOffset.UTC);
+		System.out.println(offsetUtc);
+		System.out.println(offsetUtc.isEqual(offsetUtc));
 	}
 }
