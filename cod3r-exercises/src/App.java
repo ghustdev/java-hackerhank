@@ -201,5 +201,11 @@ public class App {
 		OffsetDateTime offsetUtc = OffsetDateTime.now(ZoneOffset.UTC);
 		System.out.println(offsetUtc);
 		System.out.println(offsetUtc.isEqual(offsetUtc));
+		
+		int[] arr = new int[5];
+		
+		for (int n: arr) {
+			System.out.println(n);
+		}
 	}
 }
