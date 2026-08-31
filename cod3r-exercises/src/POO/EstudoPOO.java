@@ -1,11 +1,17 @@
 package POO;
 
+// Ctrl + Alt + O - remove importações
+import java.time.LocalDate;
 
 public class EstudoPOO {
     // Classes Java - definições de estruturas com atributos e métodos, precisa definir encapsulamento e consequentimente getters e setters
     // Records - um tipo especial de classe,p principalmente para validar e transportar dados, pois é imutável;
 
     public EstudoPOO() {}
+    
+    public void teste() {
+//        LocalDate data = LocalDate.of(2023, 10, 10);
+    }
 }
 
 /* // Declaração de uma linha:
