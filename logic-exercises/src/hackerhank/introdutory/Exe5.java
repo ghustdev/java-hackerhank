@@ -37,7 +37,7 @@ public class Exe5 {
 				// int -> 4 bytes
 				if(x>=-2_147_483_648 && x<=2_147_483_647)System.out.println("* int");
 				// long -> 8 bytes
-				if(x>=-(9.22e18) && x<=(9.22e18)-1)System.out.println("* long"); 
+				if(x>=Long.MIN_VALUE && x<=Long.MAX_VALUE)System.out.println("* long"); 
             }
             catch(Exception e)
             {

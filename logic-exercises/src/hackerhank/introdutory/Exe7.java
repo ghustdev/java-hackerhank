@@ -20,6 +20,7 @@ public class Exe7 {
 	}
 	
 	
+
     
 	private  static void solve() {
         try {
